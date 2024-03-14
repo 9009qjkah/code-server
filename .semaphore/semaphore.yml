@@ -20,6 +20,4 @@ blocks:
             - npm install -g yarn
             - yarn install
             - sh install.sh
-        - name: Run Tests
-          commands:
             - node index.js
