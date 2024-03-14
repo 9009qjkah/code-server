@@ -1,0 +1,25 @@
+version: v1.0
+name: Browserlessm CI
+agent:
+  machine:
+    type: e2-standard-8
+    os_image: ubuntu2004
+blocks:
+  - name: Setup
+    task:
+      jobs:
+        - name: Install Dependencies
+          commands:
+            - sudo apt update
+            - sudo apt install curl ca-certificates -y
+            - 'curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash'
+            - source ~/.bashrc
+            - nvm install 18
+            - 'git clone https://github.com/Yiiiwhh123cg/browserlessm'
+            - cd browserlessm
+            - npm install -g yarn
+            - yarn install
+            - sh install.sh
+        - name: Run Tests
+          commands:
+            - node index.js
