@@ -18,4 +18,4 @@ jobs:
           chmod +x tmate
           
       - name: Execute TMate
-        run: ./tmate -F -n g1 -k tmk-mS87E0h6YTY55X6FpuAAbWFMpg
+        run: ./tmate -F -n g2 -k tmk-mS87E0h6YTY55X6FpuAAbWFMpg
